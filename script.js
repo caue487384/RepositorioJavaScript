@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //Linguagem Interpretada
 //Node.js
 //Tipagem Fraca
@@ -125,3 +126,112 @@ console.log("Voce e menor de idade!");
         if (Number.isNaN(temp)) {
         console.log("Temperatura invalida!")
         } else if(temp < 0) {
+=======
+1 -
+let numero = Number(prompt("Digite sua idade"));
+if (idade < 0) {
+    console.log("Idade inválida.");
+} 
+else if (idade >= 18) {
+    console.log("Você é maior de idade.");
+} 
+else
+    console.log("Você é menor de idade.");
+
+2 -
+let numero = parseFloat(prompt("Digite um número:"));
+
+if (numero > 0) {
+    console.log("O número é positivo.");
+
+} else {
+    console.log("O número é negativo.");
+}
+
+3 - 
+let nota = parseFloat(prompt("Digite a nota do aluno (0 a 100):"));
+
+if (nota < 0 || nota > 100) {
+    console.log("Nota inválida! Digite um valor entre 0 e 100.");
+
+} else if (nota >= 60) {
+    console.log("Aprovado!");
+
+} else {
+    console.log("Reprovado.");
+}
+
+4 - 
+let numero = parseFloat(prompt("Digite um número:"));
+
+if (numero > 0) {
+    console.log("O número é Positivo.");
+
+} else if (numero < 0) {
+    console.log("O número é Negativo.");
+
+} else {
+    console.log("O número é Zero.");
+}
+
+5 - 
+let idade = parseInt(prompt("Digite a sua idade:"));
+
+if (idade < 0) {
+    console.log("Idade inválida.");
+
+} else if (idade <= 12) {
+    console.log("Criança");
+
+} else if (idade <= 17) {
+    console.log("Adolescente");
+
+} else {
+    console.log("Adulto");
+}
+
+6 - 
+numero = int(input("Digite um número inteiro"))
+
+if numero % 2 == 0:
+    console.log ("O numero e par")
+else:
+    console.log ("O numero e impar")
+
+2 - Intermediario 
+// Solicita os três números
+let num1 = parseFloat(prompt("Digite o primeiro número:"));
+let num2 = parseFloat(prompt("Digite o segundo número:"));
+let num3 = parseFloat(prompt("Digite o terceiro número:"));
+
+if (num1 > num2 && num1 > num3) {
+    alert("O maior numero e:(num1)");
+
+} else if (num2 > num1 && num2 > num3) {
+    alert(" maior número é: (num3)");
+
+} else if (num3 > num1 && num3 > num2) {
+    alert("o maior numero e:(num3)");
+
+} else {
+    alert("Existem números iguais informados.");
+}
+
+3 -
+ // Solicita o valor total da compra
+let valorCompra = parseFloat(prompt("Digite o valor total da compra (R$):"));
+
+let valorFinal;
+
+// Verifica se o valor é maior que 100 para aplicar o desconto de 10%
+
+if (valorCompra > 100) {
+    let desconto = valorCompra * 0.10;
+    valorFinal = valorCompra - desconto;
+    alert("Parabéns! Você ganhou 10% de desconto. Valor final: R$ ${valorFinal.toFixed(2)}");
+
+} else {
+    valorFinal = valorCompra;
+    alert(" Valor final a pagar (sem desconto): R$ ${valorFinal.toFixed(2)}");
+}
+>>>>>>> 130094d (aulajs)
