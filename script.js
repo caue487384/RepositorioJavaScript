@@ -1,237 +1,120 @@
-<<<<<<< HEAD
-//Linguagem Interpretada
-//Node.js
-//Tipagem Fraca
+//WHILE (enquanto)
+//Permite criar logos que sao executados zero ou mais vezes.
+
+//Enquanto a condicao for TRUE, executa o bloco de codigo!
+
+//while(true){
+    //console.log("Ao infinito e... Alem")
+//}
+
+//CONTADOR QUE EXIBIR NA TELA DE 1 A 5
+
+//contador inicia como numero 1 
+//let contador = 1
+
+//enquanto o meu contador for menor ou igual a 5, continue. 
+
+//while (contador <= 5){
+
+   // console.log ("Contagem: " + contador)
+
+    //contador = (contador + 1)
+
+    //contador = 2
+////}
+
+// CONTAGEM REGRESSIVA
 /*
-let minhaVariavel = 10;
-minhaVariavel = "Ola Mundo!";
-minhaVariavel = true;
+let tempo = 10
 
-let numero = 10;
-let texto = "20";
-let resultado = numero + texto;
-console.log(resultado);
+while(tempo > 0){
 
-console.log(Number("123"));
-console.log(parseInt("10.9"));
-console.log(parseFloat("10.9"));
-console.log(String("123"));
-console.log(Boolean("0"));
-console.log(Boolean("1"));
-console.log(Boolean(""));
-console.log(Boolean("oi"));
-const chovendo = true;
+    console.log(tempo)
 
-const solApareceu = false;
+    //tempo = tempo - 1 //Retira 1 do tempo
 
-console.log(typeof chovendo);
+    tempo--  //retira 1 do tempo
 
-    const idade = 20;
 
-if (idade >= 20) {
-console.log("maior de idade!")
 }
+console.log("Codigo acabou.")
+*/
+//VALIDACAO SENHA 
 
-const idade = 15;
+//const senhaCorreta = "148supersenha"
+//let tentativa = ""
 
-if (idade >= 18) {
-    console.log("Voce e maior de idade!");
-    {else {
-console.log("Voce e menor de idade!");
-    }
-
-    const idade = Number(prompt("Digite sua idade:"));
-
-    if (idade >= 18) {
-    console.log("Voce pode tirar carteira de motorista!");
-    } else {
-    console.log("Voce ainda nao pode dirigir.");
-    }
-
-        const idade = 20;
-    const temDocumento = true;
-    const estaLista = true;
-
-    if (idade >= 18 && temDocumento && estaLista) { 
-      console.log("Pode entrar!!")
-    } else {
-        console.log("Acesso negado!!")
-
-        const temDinheiro = false;
-        const temCartao = true;
-        const temPix = false;
-
-        if (temDinheiro || temCartao || temPix) { 
-            console.log("Pode pagar")
-        } else {
-            console.log("Nao pode pagar")
-        }
-
-        const usuario = "admin";
-        const senha = "1234";
-
-        const senhaCorreta = (senha === "1234");
-        const ehAdmin = (usuario === "admin")
-        const ehGerente = (usuario === "gerente")
-
-        if ((ehAdmin && senhaCorreta || ehGerente && senhaCorreta)) {
-        console.log("Acesso Liberado!")
-        } else {
-        console.log("Acesso Negado!")
-        }
-
-        if (ehAdmin || ehGerente) && senhaCorreta) { 
+//while(tentativa != senhaCorreta){
         
-        } else }
+    //tentativa = prompt("Digite a senha:")
 
-        }
+   // if(tentativa === senhaCorreta){
+        //console.log("Senha Correta! Acesso Liberado.")
+    //}
+    //else{
+        //console.log("Senha incorreta. Tente novamente.")
+    //}
 
-        const usuario = prompt("Usuario:");
-        const senha = prompt("Senha");
+    //Criar um codigo com While que some numeros ate passar de 100!
 
-        const acessoAdmin = (usuario === "admin" && senha === "1234");
-        const acessoUser = (usuario === "user" && senha === "senha1234");
+//let soma = 0;
+//let numero = 0;
 
-        if (acessoAdmin || acessoUser) { 
-        console.log("Acesso liberado!")
-        } else {
-        console.log("Acesso negado!")
-        }
-        
-        const nota = 75;
+//while(soma <= 100){
 
-        if (nota >= 80) { 
-            console.log("Aprovado!")
-        } else if(nota >= 60) {
-            console.log("Recuperacao!")
-        } else {
-            console.log("Reprovado!")
-        }
-        
-        */
-      // Exercício — Classificação da Temperatura
+   // numero = Number (prompt("Informe em numero"))
 
-      //  Crie um programa em JavaScript que solicite ao usuário uma temperatura em graus Celsius (°C) e classifique a temperatura de acordo com as faixas abaixo:
+   // soma = soma + numero
 
-        /*Temperatura	Classificação
-        Abaixo de 0°C	🥶 Muito frio
-       De 0°C a 15°C	❄️ Frio
-        De 16°C a 25°C	😊 Agradável
-        De 26°C a 35°C	🌡️ Quente
-        Acima de 35°C	🔥 Muito quente
-        
-        */
-        const temp = Number(prompt("Temperatura atual (°C:"));
+//}
 
-        if (Number.isNaN(temp)) {
-        console.log("Temperatura invalida!")
-        } else if(temp < 0) {
-=======
-1 -
-let numero = Number(prompt("Digite sua idade"));
-if (idade < 0) {
-    console.log("Idade inválida.");
-} 
-else if (idade >= 18) {
-    console.log("Você é maior de idade.");
-} 
-else
-    console.log("Você é menor de idade.");
+//console.log("A soma dos numeros chegou em: " + soma)
 
-2 -
-let numero = parseFloat(prompt("Digite um número:"));
+//let repetir = false
+//do{
+    //console.log("So uma vez")
 
-if (numero > 0) {
-    console.log("O número é positivo.");
+//while (repetir) //ENQUANTO a condicao for TRUE
 
-} else {
-    console.log("O número é negativo.");
+//While vs Do...While 
+
+//let num = 10;
+
+//while (x < 5)
+    //console.log("Isso NAO vai aparecer.")
+//}
+
+//do {
+    //console.log("Isso VAI aparecer pelo menos 1x")
+//} while(num < 5)
+
+
+//ADVINHE O NUMERO
+
+
+const numeroSecreto = Math.floor (Math.random()* 10) + 1;
+
+let palpite;
+let tentativas = 0;
+
+console.log("Advinhe o numero entre 1 a 10")
+
+do {
+//alert(Math.random()* 10) + 1))
+palpite = Number(prompt("Seu palpite"))
+tentativas++
+
+if (Number .isNaN(palpite)){
+    alert("Digite um numero valido.")
 }
 
-3 - 
-let nota = parseFloat(prompt("Digite a nota do aluno (0 a 100):"));
-
-if (nota < 0 || nota > 100) {
-    console.log("Nota inválida! Digite um valor entre 0 e 100.");
-
-} else if (nota >= 60) {
-    console.log("Aprovado!");
-
-} else {
-    console.log("Reprovado.");
+else if (palpite == numeroSecreto){
+    alert("Acertou!!!" + "Em" + tentativas + "tentivas.")
 }
-
-4 - 
-let numero = parseFloat(prompt("Digite um número:"));
-
-if (numero > 0) {
-    console.log("O número é Positivo.");
-
-} else if (numero < 0) {
-    console.log("O número é Negativo.");
-
-} else {
-    console.log("O número é Zero.");
+else if (palpite < numeroSecreto){
+        alert("Muito baixo! Tente um numero maior.")
 }
+else if (palpite > numeroSecreto){
+       alert("Muito alto! Tente um numero menor.")}
 
-5 - 
-let idade = parseInt(prompt("Digite a sua idade:"));
-
-if (idade < 0) {
-    console.log("Idade inválida.");
-
-} else if (idade <= 12) {
-    console.log("Criança");
-
-} else if (idade <= 17) {
-    console.log("Adolescente");
-
-} else {
-    console.log("Adulto");
-}
-
-6 - 
-numero = int(input("Digite um número inteiro"))
-
-if numero % 2 == 0:
-    console.log ("O numero e par")
-else:
-    console.log ("O numero e impar")
-
-2 - Intermediario 
-// Solicita os três números
-let num1 = parseFloat(prompt("Digite o primeiro número:"));
-let num2 = parseFloat(prompt("Digite o segundo número:"));
-let num3 = parseFloat(prompt("Digite o terceiro número:"));
-
-if (num1 > num2 && num1 > num3) {
-    alert("O maior numero e:(num1)");
-
-} else if (num2 > num1 && num2 > num3) {
-    alert(" maior número é: (num3)");
-
-} else if (num3 > num1 && num3 > num2) {
-    alert("o maior numero e:(num3)");
-
-} else {
-    alert("Existem números iguais informados.");
-}
-
-3 -
- // Solicita o valor total da compra
-let valorCompra = parseFloat(prompt("Digite o valor total da compra (R$):"));
-
-let valorFinal;
-
-// Verifica se o valor é maior que 100 para aplicar o desconto de 10%
-
-if (valorCompra > 100) {
-    let desconto = valorCompra * 0.10;
-    valorFinal = valorCompra - desconto;
-    alert("Parabéns! Você ganhou 10% de desconto. Valor final: R$ ${valorFinal.toFixed(2)}");
-
-} else {
-    valorFinal = valorCompra;
-    alert(" Valor final a pagar (sem desconto): R$ ${valorFinal.toFixed(2)}");
-}
->>>>>>> 130094d (aulajs)
+}while (palpite != numeroSecreto)
