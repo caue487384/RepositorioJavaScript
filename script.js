@@ -1,120 +1,113 @@
-//WHILE (enquanto)
-//Permite criar logos que sao executados zero ou mais vezes.
-
-//Enquanto a condicao for TRUE, executa o bloco de codigo!
-
-//while(true){
-    //console.log("Ao infinito e... Alem")
-//}
-
-//CONTADOR QUE EXIBIR NA TELA DE 1 A 5
-
-//contador inicia como numero 1 
-//let contador = 1
-
-//enquanto o meu contador for menor ou igual a 5, continue. 
-
-//while (contador <= 5){
-
-   // console.log ("Contagem: " + contador)
-
-    //contador = (contador + 1)
-
-    //contador = 2
-////}
-
-// CONTAGEM REGRESSIVA
 /*
-let tempo = 10
+console.log("Numeros pares de 0 a 20:\n")
 
-while(tempo > 0){
+pares = pares + 2
+pares += 2 - pula de 2 em 2 
+for(let pares = 0; pares <=20; pares += 2 ){
 
-    console.log(tempo)
-
-    //tempo = tempo - 1 //Retira 1 do tempo
-
-    tempo--  //retira 1 do tempo
-
-
-}
-console.log("Codigo acabou.")
-*/
-//VALIDACAO SENHA 
-
-//const senhaCorreta = "148supersenha"
-//let tentativa = ""
-
-//while(tentativa != senhaCorreta){
-        
-    //tentativa = prompt("Digite a senha:")
-
-   // if(tentativa === senhaCorreta){
-        //console.log("Senha Correta! Acesso Liberado.")
-    //}
-    //else{
-        //console.log("Senha incorreta. Tente novamente.")
-    //}
-
-    //Criar um codigo com While que some numeros ate passar de 100!
-
-//let soma = 0;
-//let numero = 0;
-
-//while(soma <= 100){
-
-   // numero = Number (prompt("Informe em numero"))
-
-   // soma = soma + numero
-
-//}
-
-//console.log("A soma dos numeros chegou em: " + soma)
-
-//let repetir = false
-//do{
-    //console.log("So uma vez")
-
-//while (repetir) //ENQUANTO a condicao for TRUE
-
-//While vs Do...While 
-
-//let num = 10;
-
-//while (x < 5)
-    //console.log("Isso NAO vai aparecer.")
-//}
-
-//do {
-    //console.log("Isso VAI aparecer pelo menos 1x")
-//} while(num < 5)
-
-
-//ADVINHE O NUMERO
-
-
-const numeroSecreto = Math.floor (Math.random()* 10) + 1;
-
-let palpite;
-let tentativas = 0;
-
-console.log("Advinhe o numero entre 1 a 10")
-
-do {
-//alert(Math.random()* 10) + 1))
-palpite = Number(prompt("Seu palpite"))
-tentativas++
-
-if (Number .isNaN(palpite)){
-    alert("Digite um numero valido.")
+    console.log(pares)
 }
 
-else if (palpite == numeroSecreto){
-    alert("Acertou!!!" + "Em" + tentativas + "tentivas.")
-}
-else if (palpite < numeroSecreto){
-        alert("Muito baixo! Tente um numero maior.")
-}
-else if (palpite > numeroSecreto){
-       alert("Muito alto! Tente um numero menor.")}
+//CONTAGEM REGRESSIVA COM FOR 
 
-}while (palpite != numeroSecreto)
+console.log("Lançamento em : \n")
+
+conta--
+conta = conta - 1
+
+for (let conta = 10; conta >= 1; conta--)
+
+{
+    console.log(conta + "...")
+}
+
+console.log ("Decolar!")
+
+
+DESAFIO
+
+Crie um programa que mostre os numeros de 1 a 3.
+Cada numero deve aparecer 3 vezes na mesma linha.
+
+Saida esperada 
+1 1 1
+2 2 2 
+3 3 3
+
+Dica:
+Use um for para controlar os numeros
+e outro for dentro para repetir cada numero.
+
+for (let i = 1; i <= 3; i++){
+let linha = " ";
+
+for (let j = 0; j < 3; j++){
+linha += i + " ";
+
+/*
+DESAFIO 2 
+
+DESENHAR PIRAMIDE DE ASTERISCOS
+
+for (let i = 1; i <= linhas; i++)
+{
+    const espacos = ' '.repeat(linhas - i);
+    const asteriscos = '*'.repeat(2 * i - 1);
+    console.log(espaços + asteriscos);
+
+    Exercicios Nivel Basico
+
+1 - 
+    for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+2 - 
+readline.question('Digite um número: ', (input) => {
+    const numero = parseInt(input);
+    
+for (let i = 1; i <= 10; i++) {
+    console.log(`${numero} x ${i} = ${numero * i}`);
+}
+  
+3 - 
+if (numero > 0) {
+    let soma = 0;
+    for (let i = 1; i <= numero; i++) {
+    soma += i;
+}
+    
+    console.log(`Resultado: ${soma}`);
+} else {
+    console.log("Por favor, digite um número maior que zero.");
+}
+
+INTERMEDIARIO
+
+1 - 
+
+        for (int i = 2; i <= 50; i += 2) {
+    System.out.println(i);
+    }
+
+2 - 
+
+        int numeroSecreto = random.nextInt(100) + 1;
+        int palpite = 0;
+
+        System.out.println("Tente adivinhar o número entre 1 e 100!");
+
+        while (palpite != numeroSecreto) {
+        System.out.print("Digite seu palpite: ");
+        palpite = scanner.nextInt();
+
+        if (palpite > numeroSecreto) {
+        System.out.println("O número secreto é menor.");
+        }else if (palpite < numeroSecreto) {
+        System.out.println("O número secreto é maior.");
+            }
+        }
+            
+        System.out.println("Parabéns! Você acertou o número secreto!");
+    }
+}
