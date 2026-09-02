@@ -1,68 +1,38 @@
-//ARRAY
-//UM ARRAY E UM TIPO DE DADOS QUE SERVE PARA ARMAZENAR VALOR
-//SEQUENCIALMENTO EM FORMA DE LISTA
+    // Array representando os itens do pedido
+const pedido = [
+    {nome:"Hambúrguer Artesanal", preço: 28.50, quantidade: 2},
+    {nome:"Batata Frita Rustica", preço: 14.00, quantidade: 3},
+    {nome:"Refrigerante 600ml", preço: 8.00, quantidade: 4},
+    {nome:"Milk-shake de Ovomaltine", preço: 18.00, quantidade: 1}
+]
 
-//ITENS COMEÇAM DO NUMERO ZERO
+    // Variáveis para controlar os totais
+    let valorTotalPedido = 0;
+    let itemMaiorValor = null;
+    let maiorValorTotalItem = 0;
 
-const numeros= [ 1,2,3,4,5 ]
-const nomes = ["Ana", "Caio", "Lucas"]
+console.log("=== COMPROVANTE DO PEDIDO ===");
 
+    // Percorrendo todos os itens com for...of
+    for (const item of pedido){
 
-//na minha lista de numeros
-//eu quero a posicao 0
-console.log(numeros[0])
+    // Calculando o valor total do item
+    const valorTotalItem = item.preço * item.quantidade;
 
-console.log(nomes[0])
+    // Exibindo nome, quantidade e valor total no console
+console.log(`${item.nome} x${item.quantidade} - R$ ${valorTotalItem.toFixed(2)}`);
 
-//LENGTH
-//E UMA PROPRIEDADE PARA OBTER O COMPRIMENTO DE UMA ARRAY
+    // Soma ao total geral do pedido
+    valorTotalPedido += valorTotalItem;
 
-console.log(nomes.length) //
-
-
-//vamos percorrer toda a lista
-//e colocar no console cada item.
-
-for ( let i = 0; i < 3; i++ ){
-
-    console.log(nomes[i])
+    // Verificando qual item teve o maior valor total
+    if (valorTotalItem > maiorValorTotalItem){
+    maiorValorTotalItem = valorTotalItem;
+    itemMaiorValor = item;
+  }
 }
 
-
-//For of
-const frutas = ["Maça", "Laranja", "Uva", "Morango"]
-
-for ( const fruta of frutas ){
-    console.log(fruta)
-}
-
-
-//FACA A SOMA DE TODOS OS NUMEROS DE UM ARRAY
-
-const listaNumeros = [10, 25, 8, 42, 15, 7]
-
-let soma = 0;
-
-//of listaNumeros - Percorra toda a lista!
-
-for ( const numero of listaNumeros ){
-    soma += numero
-}
-
-console.log("Numeros", numeros)
-
-console.log("Soma", soma)
-
-
-const notas = [7.5, 9.0, 6.5, 8.8, 10.0, 5,5];
-//utilize o for of e retorne a maior nota
-
-let maiorNota = ListaNota[0]
-
-for (const nota of ListaNota){
-
-    if(nota > maiorNota)
-        maiorNota = nota
-}
-
-console.log("Maior nota:" + maiorNota)
+    // Exibição dos resultados finais
+console.log("------------------------------");
+console.log(`Valor total do pedido: R$ ${valorTotalPedido.toFixed(2)}`);
+console.log(`Item de maior valor total: ${itemMaiorValor.nome} (R$ ${maiorValorTotalItem.toFixed(2)})`);
